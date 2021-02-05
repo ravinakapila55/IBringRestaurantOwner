@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibring_restaurantowner">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".views.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".views.tutorial.WelcomeScreen"
+         android:screenOrientation="portrait"
+         />
+
+        <service android:name=".notification.FirebaseMessages">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".views.Login"
+        android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.home.HomeScreen"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.home.AcceptedOrders"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.home.NearbyDrivers"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.home.Menu"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.ForgetPassword"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.OTPActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".views.ChangePassword"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>

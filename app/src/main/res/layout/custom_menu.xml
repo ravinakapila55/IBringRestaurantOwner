@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cc_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="6dp"
+        android:background="@color/white"
+        android:layout_margin="5dp">
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starters"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="normal"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textStyle="normal"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+         android:id="@+id/tvItems"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="6 Items"
+         android:textSize="14sp"
+         android:textColor="@color/chat_text"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/tvType"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cc_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cc_main"
+        android:background="@color/white"
+        android:layout_margin="5dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerSubItems"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="8dp"
+    android:layout_height="200dp"/>
+
+   <com.ibring_restaurantowner.fonts.ClanProTextView
+      android:id="@+id/tvNoData"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No Data Found"
+      android:textSize="16sp"
+      android:visibility="gone"
+      android:textColor="@color/black"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:textStyle="normal"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

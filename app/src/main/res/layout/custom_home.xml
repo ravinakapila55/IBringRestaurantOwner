@@ -1,0 +1,231 @@
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvCar"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearr"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:padding="3dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID :48674894949"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 400"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:layout_marginTop="12dp"/>
+
+
+
+       <!-- <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvMenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1* Butter Chicken"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:layout_marginTop="12dp"/>-->
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cc_prepare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler"
+            android:background="@color/grayy"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_goneMarginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="6dp"
+            android:layout_marginRight="8dp">
+
+
+            <com.ibring_restaurantowner.fonts.ClanProTextView
+                android:id="@+id/tvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Food Preparation Time"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <com.ibring_restaurantowner.fonts.ClanProTextView
+                android:id="@+id/tvMinus"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/black"
+                android:background="@color/dustYellow"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.ibring_restaurantowner.fonts.ClanProTextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 Minutes"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <com.ibring_restaurantowner.fonts.ClanProTextView
+                android:id="@+id/tvAdd"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/black"
+                android:background="@color/dustYellow"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cc_reject"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cc_prepare"
+        android:background="@drawable/red_stroke"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp"
+        android:layout_marginRight="10dp">
+
+
+
+        <com.ibring_restaurantowner.fonts.ClanProTextView
+            android:id="@+id/tvReject"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="REJECT"
+            android:textSize="12sp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cc_accept"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cc_prepare"
+            android:background="@drawable/green_solid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="6dp"
+            android:layout_marginRight="8dp">
+
+
+
+            <com.ibring_restaurantowner.fonts.ClanProTextView
+                android:id="@+id/tvAccept"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="ACCEPT ORDER(60 sec)"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

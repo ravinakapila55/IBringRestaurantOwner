@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "96397655082",
+    "firebase_url": "https://ibringrestaurantapp.firebaseio.com",
+    "project_id": "ibringrestaurantapp",
+    "storage_bucket": "ibringrestaurantapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96397655082:android:da2e97f45468bd3b6cd753",
+        "android_client_info": {
+          "package_name": "com.ibring_restaurantowner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96397655082-hbs8mavdigqf2f9ak3439flkc3bjkrgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgUa0rWszVmIkfNUs5t2gfGaDPRBWwGZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96397655082-hbs8mavdigqf2f9ak3439flkc3bjkrgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
